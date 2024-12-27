@@ -1,0 +1,63 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Basic format -->
+    <PreferenceCategory
+        android:title="Basic format">
+
+        <ListPreference
+            android:key="font_size"
+            android:title="Size"
+            android:entries="@array/font_sizes"
+            android:entryValues="@array/font_size_values"
+            android:defaultValue="16" />
+
+        <ListPreference
+            android:key="text_color"
+            android:title="FG Color"
+            android:entries="@array/text_colors"
+            android:entryValues="@array/text_color_values"
+            android:defaultValue="#000000" />
+
+        <ListPreference
+            android:key="background_color"
+            android:title="BG Color"
+            android:entries="@array/bg_colors"
+            android:entryValues="@array/bg_color_values"
+            android:defaultValue="#FFFFFF" />
+
+        <!-- Negrita (Bold) -->
+        <SwitchPreference
+            android:key="bold_text"
+            android:title="Bold"
+            android:defaultValue="false"
+            android:summaryOff="Text is not bold"
+            android:summaryOn="Text is bold" />
+
+        <!-- Cursiva (Italic) -->
+        <SwitchPreference
+            android:key="italic_text"
+            android:title="Italic"
+            android:defaultValue="false"
+            android:summaryOff="Text is not italic"
+            android:summaryOn="Text is italic" />
+    </PreferenceCategory>
+
+    <!-- Advanced format -->
+    <PreferenceCategory
+        android:title="Advanced format">
+        <SeekBarPreference
+            android:key="alpha"
+            android:title="Alpha"
+            android:defaultValue="100"
+            android:max="100"
+           />
+
+        <SeekBarPreference
+            android:key="rotation"
+            android:title="Rotation"
+            android:defaultValue="0"
+            android:max="360"
+            />
+
+    </PreferenceCategory>
+</PreferenceScreen>

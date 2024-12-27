@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">sharedpreferences2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Master Dispositivos Móviles</string>
+    <string name="nav_header_subtitle">carlos.aragones@ua.es</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="menu_home">Main</string>
+    <string name="menu_settings">Settings</string>
+</resources>
